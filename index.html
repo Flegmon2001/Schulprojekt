@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>IK Stundenplan Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>IK Stundenplan Generator</h1>
+
+<div class="container">
+    <h2>1. Dateien hochladen</h2>
+    <input type="file" id="stundenplanFile">
+    <input type="file" id="schuelerFile">
+
+    <h2>2. Schüler auswählen</h2>
+    <select id="schuelerSelect"></select>
+
+    <h2>3. Fächer auswählen</h2>
+    <div id="faecherListe"></div>
+
+    <button onclick="generatePlan()">Stundenplan erstellen</button>
+</div>
+
+<h2>Ergebnis</h2>
+<table id="outputTable"></table>
+
+<script src="script.js"></script>
+</body>
+</html>
